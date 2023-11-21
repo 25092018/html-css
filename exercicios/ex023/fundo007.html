@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-size: 100% 100%;
+
+            position: relative;  /* todo o posicionamento é por padrão relativo*/
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+
+            background-size: 100% 100%;
+            position: absolute; /* o posionamento absoluto sempre por baixo do relativo */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+
+            left: 50%;
+            top: 50%;
+
+
+            transform: translate(-50%, -50%); /*quando coloca o numero posito no x vai pra direita e quando o y é negativo vai pra baixo, quando o x é negativo vai pra cima e quando o y é negativo vai pra cim*/
+
+        }
+    </style>
+</head>
+<body>
+    <section id='container'>
+        <article id='conteudo'>
+
+
+        </article>
+
+    </section>
+</body>
+</html>
