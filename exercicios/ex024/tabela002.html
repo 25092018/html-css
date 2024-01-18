@@ -31,6 +31,19 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+            
+        }
+
+        tbody > tr:nth-child(2n - 1){ /* pode ser tanto pelo numero ex:"2n" quanto por "odd" par e "even" e impar */
+            background-color: lightgray;
+            font-weight: bold;
+
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: brown;
+            text-decoration: underline;
+
         }
     </style>
 </head>
