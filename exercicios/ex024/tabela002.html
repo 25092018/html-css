@@ -20,6 +20,7 @@
         table{
             width:500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -34,6 +35,12 @@
             
         }
 
+        thead > tr > th{
+            position: sticky;
+            top:-1px;
+            background-color: gray ;
+        }
+
         tbody > tr:nth-child(2n - 1){ /* pode ser tanto pelo numero ex:"2n" quanto por "odd" par e "even" e impar */
             background-color: lightgray;
             font-weight: bold;
@@ -41,7 +48,7 @@
         }
 
         tbody > tr:nth-child(2n){
-            background-color: brown;
+            background-color:white;
             text-decoration: underline;
 
         }
