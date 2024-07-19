@@ -7,5 +7,25 @@
 </head>
 <body>
     <h1>Teste de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete='on'>
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value='#00ff00'>
+        </p>
+        <p>
+            <label for="inivel">Nivel de satisfação:</label>
+            <input type="range" name="nivel" id="inivel" value='2'  min='1' max='4'>
+        </p>
+        <p>
+            <label for="ifoto">Foto</label>
+            <input type="file" name="foto" id="ifoto">
+            <!--quando for enviar uma imagem tem q usar o metodo post ao invez do get-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+    
 </body>
 </html>
